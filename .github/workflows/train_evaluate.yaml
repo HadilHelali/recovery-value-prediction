@@ -4,8 +4,6 @@ jobs:
   run:
     runs-on: [ubuntu-latest]
     container: docker://dvcorg/cml-py3:latest
-    env:
-      REMOTE_URL: ${{ secrets.GOOGLE_DRIVE_REMOTE_URL }}
     steps:
       - uses: actions/checkout@v2
       - name: 'Train and Evaluate model'
@@ -15,6 +13,7 @@ jobs:
           pip install -r requirements.txt
 
           # Pull data & run-cache from Google Drive and reproduce pipeline
+          dvc remote add -d remote-storage gdrive://${{ secrets.GOOGLE_DRIVE_FOLDER_ID }} --local
           dvc pull --run-cache
           dvc repro --remote remote-storage
 
