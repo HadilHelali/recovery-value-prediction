@@ -13,7 +13,8 @@ jobs:
           pip install -r requirements.txt
 
           # Pull data & run-cache from S3 and reproduce pipeline
-          dvc remote add -d gdrive gdrive://1tlPdfCUh0Pw7Ziu1s5veqiKwByDg9mXV
+          dvc remote add -d remote-storage ${{ env.REMOTE_URL }}
+          dvc remote modify remote-storage gdrive_acknowledge_abuse true
           dvc pull --run-cache
           dvc repro
 
