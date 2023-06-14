@@ -15,8 +15,6 @@ jobs:
           pip install -r requirements.txt
 
           # Pull data & run-cache from Google Drive and reproduce pipeline
-          dvc remote add -d remote-storage gdrive://${{ secrets.GOOGLE_DRIVE_FOLDER_ID }} --local
-          dvc remote modify remote-storage gdrive_acknowledge_abuse true
           dvc pull --run-cache
           dvc repro --remote remote-storage
 
