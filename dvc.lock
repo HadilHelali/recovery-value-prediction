@@ -13,3 +13,45 @@ stages:
     - path: ./data/weatherAUS_processed.csv
       md5: f9387b24e27adc5e68a9d079f470c43c
       size: 6097673
+  train:
+    cmd: python3 ./src/train.py ./data/weatherAUS_processed.csv ./src/model.py 200
+    deps:
+    - path: ./data/weatherAUS_processed.csv
+      md5: f9387b24e27adc5e68a9d079f470c43c
+      size: 6097673
+    - path: ./src/model.py
+      md5: 4c13feaea9c8ea2b6c5955b8d59cf926
+      size: 6439
+    - path: ./src/train.py
+      md5: 7d2c670b4add747d58240ed0b6b46bed
+      size: 1429
+    outs:
+    - path: ./models/model.joblib
+      md5: 98244ad1deee91e811b166cc96b15e69
+      size: 4798
+  evaluate:
+    cmd: python3 ./src/evaluate.py ./data/weatherAUS_processed.csv ./src/model.py
+      ./models/model.joblib
+    deps:
+    - path: ./data/weatherAUS_processed.csv
+      md5: f9387b24e27adc5e68a9d079f470c43c
+      size: 6097673
+    - path: ./models/model.joblib
+      md5: 98244ad1deee91e811b166cc96b15e69
+      size: 4798
+    - path: ./src/evaluate.py
+      md5: 7e466368d793d09316fc1e078111a9de
+      size: 882
+    - path: ./src/model.py
+      md5: 4c13feaea9c8ea2b6c5955b8d59cf926
+      size: 6439
+    outs:
+    - path: ./results/metrics.json
+      md5: 3d253669aa5a79288322d1867a976cbe
+      size: 120
+    - path: ./results/precision_recall_curve.png
+      md5: 0a115c371859dd4a57f4748b110118dd
+      size: 13382
+    - path: ./results/roc_curve.png
+      md5: b0fc9a25279fc11ef5a2b0972579e907
+      size: 17934

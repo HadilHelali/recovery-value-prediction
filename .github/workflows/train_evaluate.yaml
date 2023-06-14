@@ -8,15 +8,12 @@ jobs:
       - uses: actions/checkout@v2
       - name: 'Train and Evaluate model'
         shell: bash
-        env:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           # Install requirements
           pip install -r requirements.txt
 
           # Pull data & run-cache from S3 and reproduce pipeline
+          dvc remote add -d gdrive gdrive://1tlPdfCUh0Pw7Ziu1s5veqiKwByDg9mXV
           dvc pull --run-cache
           dvc repro
 

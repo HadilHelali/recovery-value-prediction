@@ -13,6 +13,8 @@ sys.path.append(
 # Model Python file
 from model import get_variables
 
+# TODO : change this part of the code : testing the model
+
 FILE_NAME = "testWeatherAUS"
 PROCESSED_DATA_PATH = (
     os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
@@ -57,6 +59,7 @@ def test_get_variables(expected_X, expected_y):
     data = pd.read_csv(PROCESSED_DATA_PATH)
 
     # Run Function
+    # TODO: change the target :
     X, y = get_variables(data, "RainTomorrow")
 
     assert (X.to_dict(), y.to_list()) == (expected_X, expected_y)

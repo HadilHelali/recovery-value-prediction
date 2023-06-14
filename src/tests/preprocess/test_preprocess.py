@@ -7,6 +7,7 @@ import pandas as pd
 import sys
 import os
 
+
 # Parent Folder
 sys.path.append(
     os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
@@ -15,6 +16,7 @@ sys.path.append(
 # Preprocess Python file
 import preprocess_data
 
+# TODO : change only the name :
 FILE_NAME = "testWeatherAUS"
 DATA_PATH = (
     os.path.dirname(os.path.realpath(__file__)) + "/test_data/" + FILE_NAME + ".csv"
