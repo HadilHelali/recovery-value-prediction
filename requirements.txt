@@ -9,4 +9,4 @@ pytest
 pytest-dependency
 pylint
 pre-commit
-pydrive2
+dvc[gdrive]

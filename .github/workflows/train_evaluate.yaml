@@ -13,7 +13,8 @@ jobs:
           pip install -r requirements.txt
 
           # Pull data & run-cache from Google Drive and reproduce pipeline
-          dvc pull --run-cache
+          dvc add -d storage gdrive://{{secrets.GOOGLE_DRIVE_FOLDER_ID}} 
+          dvc pull 
           dvc repro
 
           # Report metrics
