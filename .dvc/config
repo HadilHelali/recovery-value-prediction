@@ -3,3 +3,4 @@
 ['remote "storage"']
     url = gdrive://1wPbrKfJuCWtaw5462wChVf1QxLO81NvL
     gdrive_use_service_account = true
+    gdrive_service_account_json_file_path = .gdrive/mindful-silo-389912-a35ee1b65668.json
