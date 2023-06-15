@@ -26,7 +26,7 @@ jobs:
 
           # Publish confusion matrix diff
           echo -e "## Plots\n### ROC Curve" >> report.md
-          cml-publish ./results/roc_curve.png --md >> report.md
+          echo "![](./results/roc_curve.png)" >> report.md
           echo -e "\n### Precision and Recall Curve" >> report.md
-          cml-publish ./results/precision_recall_curve.png --md >> report.md
-          cml-send-comment report.md
+          echo "![](./results/precision_recall_curve.png)" >> report.md
+          cml comment create report.md
