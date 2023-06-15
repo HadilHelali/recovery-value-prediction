@@ -9,4 +9,4 @@ pytest
 pytest-dependency
 pylint
 pre-commit
-dvc>=2.7.0
+dvc[gdrive]>=1.7.0
