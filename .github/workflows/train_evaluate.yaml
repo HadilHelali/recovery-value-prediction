@@ -11,9 +11,6 @@ jobs:
         run: |
           # Install requirements
           pip install -r requirements.txt
-          pip install --upgrade dvc
-          dvc --version
-          pip install dvc['gdrive']
 
           # Pull data & run-cache from Google Drive and reproduce pipeline
           dvc pull --run-cache
