@@ -9,6 +9,7 @@ jobs:
       - name: 'Train and Evaluate model'
         env:
           GDRIVE_CREDENTIALS_DATA: ${{ secrets.DATA_REPO_SECRET }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
         run: |
           # Install requirements
