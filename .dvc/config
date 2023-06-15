@@ -2,4 +2,3 @@
     remote = remote_storage
 [remote "remote_storage"]
     url = "gdrive://1tlPdfCUh0Pw7Ziu1s5veqiKwByDg9mXV"
-
