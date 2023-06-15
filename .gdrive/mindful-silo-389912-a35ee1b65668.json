@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "mindful-silo-389912",
+  "private_key_id": "a35ee1b656689206c50b70d6832ee978ab9185bb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKHeuGk9WG0HkF\nBfTMYAlGhX82XpADfV89br8iKnkE41seRSobMfynkhm6KgFGdjYFtOHJ9YZzhldD\n+hB68nBDA0i1a4WrwTTUk9mKxh+3xd+yQFShFpX17X8eGo3WhWnt89O7mC3ZWjJW\niQ0s7X4kWY86amdCwInC62S1V4do3IxqRHQdNOimXcq3Xnk8TQg1rkLpOp0CTgF+\n3OATK6+rv5nHo+JThVew09sH4pdU/1lbBVsBVwH7Sw/9xzN3NNlt7oQ5ZXSTfUM7\nrcM8Bw9a1fLxuuAS7NMSQFgIyR8kEopliAQc/eepHCtA+r9ERieD2OUDLiyV2t2Z\n/umLWaHJAgMBAAECggEACnJ0d57RlSfWcYuGxT+biyEgW7OUlxGWaCr+xynR2o5T\n6eMiU4iIajLzkHtWWImIrk/Usec2fWcuwI0+59P7OIOFcRcvMBsK+4fu4Szve8TH\nFMQde7waoT0W6nvt4+4+dPW69oHdsNPoMS/hVfaqo/9bF2ZjkwA3vrMDIBp3ndRd\nB+gllo5RgoBknloh9aFVBB3CMwxswFQWeJihNRh92ibk6QSq+RhJD/Z/ZvpBALRt\nt1Qv8x1aCtWdz2VFJxsWwbL5HZfZeJsusiPtezzfmnNLOdnoEwprOrFcQym4SZ19\n4R+SE5HHG/GoRfnSv/yb4T5qgIaHiF//LiNgDir45wKBgQDrvkL0STJzrIx5I7IQ\nsZEiZ5iZXdYxBKSkifCDQffA8edpYVuu3ZSPoG9mrv784T69JAT9XNDN9Us1FLn2\nHXbemOM5ITznpsaDk4uqtX8jQj15GeLN5XEWCE0NBSWnO0uUF51hVwhp9iHhTc+3\nXlRpXYnNKrAPRkqQ0E6kxasuNwKBgQDbe/dpLdV8lZ3YV0XCEyg4Eam4v8EWk05j\nvoqpsdNRViV+ldlDFZEYdC495kW8KQ4AeriggEPDe5PQZ6qdVhitMrK8rIvsOWhl\nP5Hu33PLWVSssS3QIbuAMevQlfwn5BvBF8+Q49Ilyszt5KamRgtyg2QovYyBrXWo\nGzn74Tmv/wKBgQCKUNOP6PKFFBRHbz4mtUhmW0oZkgj+Ma84KwbGvInU1xnjpo/Y\nhYGI06UJJlvNm4roBp422aJZdTZvKn4BfUAlUqbe+jV15VBMGuGzg1HZKiBPUXTV\nQW2cc7phjUeOWyf49/ILDrmNEjDGtJTPDbWRLKSRkB5EmAVf+hhqbOAG+QKBgC9O\nB6QOsd2ZLZ0MKkfK8zcqb2cXRRmFhDaxQZeTcRUtuQUQbPQteMlJeRH0SIFmY9Ms\noBBPtMs0HkajoT0p6kWiEK3jjoDKWrq/ucc/N+jTBxH1Wgdqzcuydr3NJby/SFAU\nvrLet1NX41U+m8Bohl0W/oZdXCQy65Hg1F16TIGnAoGAKL1quFHjdETqBY5ukxU0\nQjFxw1+gM1q2dZGsZronAybk/q5mONnkf6/OWTR5OPXbKwDikB6hem0iVwMo2LcP\nI2BN974CTd7mK1FmjN0RJ8KTPgMChL59sXg/xHGtH/CrTOfor7wscW4S7OlhAvCt\nQHdOAWvDzGS2QpHDZM7j48U=\n-----END PRIVATE KEY-----\n",
+  "client_email": "gdrive-api@mindful-silo-389912.iam.gserviceaccount.com",
+  "client_id": "104995759413549597483",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gdrive-api%40mindful-silo-389912.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

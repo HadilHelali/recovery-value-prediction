@@ -7,15 +7,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: 'Train and Evaluate model'
+        env:
+          GDRIVE_CREDENTIALS_DATA: ${{ secrets.DATA_REPO_SECRET }}
         shell: bash
         run: |
           # Install requirements
           pip install -r requirements.txt
 
           # Pull data & run-cache from Google Drive and reproduce pipeline
-          dvc remote modify storage --local gdrive_client_id 391092728699-58893dab6dn66beu7pagssebf7310j2d.apps.googleusercontent.com
-          dvc remote modify storage --local gdrive_client_secret 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
-          dvc pull --run-cache
+          dvc pull
           dvc repro
 
           # Report metrics
