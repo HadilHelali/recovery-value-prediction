@@ -9,4 +9,4 @@ pytest
 pytest-dependency
 pylint
 pre-commit
-dvc
+dvc==2.58.2
